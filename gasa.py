@@ -4,7 +4,7 @@ import requests
 import json
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/generate_lyrics', methods=['POST'])
 def generate_lyrics():
