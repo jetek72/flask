@@ -10,7 +10,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 def generate_lyrics():
     input_text = request.form.get('input_text')
     headers = {
-        'Authorization': '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',
+        'Authorization': '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',
         'Content-Type': 'application/json'
     }
     data = {
